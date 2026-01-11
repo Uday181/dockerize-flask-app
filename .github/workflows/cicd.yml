@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Build the docker image
-      run: docker build -t flask-docker-app:recent .
+      run: docker build . --file DockerFile --tag workflow-docker:$(date +%Y%m%d%H%M%S)
   build-and-test:
     runs-on: ubuntu-latest
 
