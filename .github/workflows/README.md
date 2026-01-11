@@ -1,0 +1,1 @@
+##This project shows how Github action can be used to automate CI/CD workflows for flash application
